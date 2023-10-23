@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8611893-1BBC-4B8E-81DB-83762C002771}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ikeaGameV2</RootNamespace>
+    <AssemblyName>ikeaGameV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\ikeaBedroom.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikea_civ.webp" />
+    <None Include="Resources\loseScreen3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loseScreen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loseScreen.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winScreen.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikeaWarehouse.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikeaAppliances.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikeaCafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loseScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikeaWarehouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikeaBedroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loseScreen4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159390__electrobuz__limbo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\553490__victor_natas__dreamy-piano.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monkeys Spinning Monkeys.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scheming Weasel %28faster Version%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fluffing a Duck.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hall of the Mountain King.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amazing Plan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fluffing a Duck.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scheming Weasel %28faster Version%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monkeys Spinning Monkeys.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOCAL 58 WCLV TV Music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Caretaker Its just a burning memory 2016.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IKEA-store-entrance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikea_checkout1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikea_checkout2-scaled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikea_civ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pharrell-Williams-Happy-Official-Video.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shocked-sound-effect.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
